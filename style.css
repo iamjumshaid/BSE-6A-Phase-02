@@ -45,3 +45,9 @@
     color: #333;
     font-weight: 600;
 }
+
+.table,
+.table-responsive,
+.table-border {
+    border-bottom: #0062cc 2px solid;
+}
