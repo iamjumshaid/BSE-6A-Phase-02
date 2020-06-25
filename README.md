@@ -1,7 +1,7 @@
 # BSE-6A-Phase-02
--Simple static page.
--Hostedo on Surge
--Download and update according to your needs.
+- Simple static page.
+- Hostedo on Surge
+- Download and update according to your needs.
 
 # To host your static pages on Surge
 - Install node https://nodejs.org/en/
