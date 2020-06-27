@@ -2,6 +2,7 @@
 - Simple static page.
 - Hosted on Surge
 - Download and update according to your needs.
+- Website address: http://phase02-bse-6a.surge.sh/
 
 ## To host your static pages on Surge
 - Install node https://nodejs.org/en/
