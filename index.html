@@ -13,7 +13,7 @@
     <link rel="icon" href="icon.png" type="image/icon type">
 </head>
 
-<body>
+<body onload="myFunction()">
 
     <h1 class="text-center text-success">BSE 6A - Phase 02 Updates</h1>
 
@@ -29,7 +29,7 @@
             </li>
         </ul>
     </div>
-    <marquee class="text-danger border">
+    <marquee class="text-danger border" id="deadline">
         <b>SUBMIT ML ASSIGNMENT TODAY ON PORTAL BEFORE 10:47 PM
         </b>
     </marquee>
@@ -913,7 +913,16 @@
             </div>
         </div>
     </section>
+    <script>
+        function myFunction() {
+            var a = new Date('2020-07-04');
+            var b = new Date();
+            if (a.getDate() == b.getDate()) {
+                document.getElementById('deadline').innerHTML = "<b class=\"text-success\">NO SUBMISSION ON SATURDAY JULY 04, 2020</b>";
 
+            }
+        }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
