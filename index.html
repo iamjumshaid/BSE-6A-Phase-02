@@ -640,6 +640,21 @@
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td>Lecture 21</td>
+                                        <td>Tuesday, July 07</td>
+                                        <td><a href="https://youtu.be/RAeG4SRk-aU" target="_blank">
+                                        Click Here
+                                        </a>
+                                        </td>
+
+                                        <td><a href="https://drive.google.com/file/d/1aqr7PFpyPPrIKfNJjLhAxdQD1o4tyiAx/view?usp=sharing" target="_blank">
+                                           Click Here 
+                                        </a>
+
+                                        </td>
+                                        <td>Feature Selection</td>
+                                    </tr>
+                                    <tr>
                                         <td>Lecture 20</td>
                                         <td>Thursday, July 02</td>
                                         <td><a href="https://youtu.be/lfWVxWpE_F4" target="_blank">
@@ -917,9 +932,35 @@
         function myFunction() {
             var a = new Date('2020-07-04');
             var b = new Date();
-            if (a.getDate() == b.getDate()) {
-                document.getElementById('deadline').innerHTML = "<b class=\"text-success\">NO SUBMISSION ON SATURDAY JULY 04, 2020</b>";
+            var month = new Array();
+            month[0] = "January";
+            month[1] = "February";
+            month[2] = "March";
+            month[3] = "April";
+            month[4] = "May";
+            month[5] = "June";
+            month[6] = "July";
+            month[7] = "August";
+            month[8] = "September";
+            month[9] = "October";
+            month[10] = "November";
+            month[11] = "December";
+            //   if (a.getDate() == b.getDate()) {
+            //    
 
+            //}
+            switch (b.getDate()) {
+                case 4:
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-success\">NO SUBMISSION ON SATURDAY JULY 04, 2020</b>";
+                    break;
+                case 5:
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT HCI LAB ASSIGNMENT LO-FI PROTOTYPE BEFORE 11:59 PM ON PORTAL.</b>";
+                    break;
+                case 6:
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT AI LAB ASSIGNMENT PROLOG BEFORE 11:59 PM ON PORTAL.</b>";
+                    break;
+                default:
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-primary\">YET TO BE UPDATED FOR " + month[b.getMonth()] + " 0" + b.getDate() + ", " + b.getFullYear() + " </b>";
             }
         }
     </script>
