@@ -922,7 +922,7 @@
                                     </tr>
                                     <tr>
                                         <td>AI Lab Assignment</td>
-                                        <td>Monday, July 06</td>
+                                        <td>Tuesday, July 07</td>
                                         <td>11:59 pm</td>
                                         <td>
                                             See Lab 10 Manual
@@ -997,14 +997,14 @@
 
             //}
             switch (b.getDate()) {
-                case 4:
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-success\">NO SUBMISSION ON SATURDAY JULY 04, 2020</b>";
-                    break;
-                case 5:
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT HCI LAB ASSIGNMENT LO-FI PROTOTYPE BEFORE 11:59 PM ON PORTAL.</b>";
-                    break;
                 case 6:
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT AI LAB ASSIGNMENT PROLOG (11:59 PM) PORTAL | SUBMIT HCI LAB TASK MANUAL 11 (11:59 PM TODAY ON MS TEAMS MA'AM'S INBOX).</b>";
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT HCI LAB TASK MANUAL 11 (11:59 PM TODAY ON MS TEAMS MA'AM'S INBOX).</b>";
+                    break;
+                case 7:
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT AI LAB ASSIGNMENT PROLOG (11:59 PM) PORTAL.</b>";
+                    break;
+                case 12:
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT HCI LAB GROUP ASSIGNMENT WIREFRAMING PROTOTYPES (11:59 PM) PORTAL.</b>";
                     break;
                 default:
                     document.getElementById('deadline').innerHTML = "<b class=\"text-success\">NO SUBMISSION FOR " + month[b.getMonth()] + " 0" + b.getDate() + ", " + b.getFullYear() + " </b>";
