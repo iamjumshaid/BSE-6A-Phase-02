@@ -70,6 +70,22 @@
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td>Lecture 20</td>
+                                        <td>Thursday, July 16</td>
+                                        <td><a href="https://drive.google.com/file/d/1HMYAXF0msxPNvbVwijdc-lSEll3cM4SK/view?usp=sharing" target="_blank">
+                                        Click Here - Part 1
+                                        </a>
+                                            <br>
+                                            <a href="https://drive.google.com/file/d/1Hr1VrkBNIvJIRy11EZOau-AMy46-B5_w/view?usp=sharing" target="_blank">
+                                            Click Here - Part 2
+                                            </a>
+                                        </td>
+                                        <td><a href="https://drive.google.com/file/d/1GB6s3aF01LZpr8Hn5-27e0ZIuoPbnV4E/view?usp=sharing" target="_blank">
+                                            Click Here
+                                            </a></td>
+                                        <td>Propositional Logic | FOL</td>
+                                    </tr>
+                                    <tr>
                                         <td>Lecture 19</td>
                                         <td>Monday, July 13</td>
                                         <td><a href="https://drive.google.com/file/d/1G43cYw8-IVaHddRnrhT4A2Hj0bUqfY7y/view?usp=sharing" target="_blank">
@@ -79,7 +95,7 @@
                                         <td><a href="https://drive.google.com/file/d/1GB6s3aF01LZpr8Hn5-27e0ZIuoPbnV4E/view?usp=sharing" target="_blank">
                                         Click Here
                                         </a></td>
-                                        <td>Knowledge & Types|Knowledge Pyramid</td>
+                                        <td>Knowledge & Types | Knowledge Pyramid</td>
                                     </tr>
                                     <tr>
                                         <td>Lecture 18</td>
@@ -1149,10 +1165,10 @@
                                             <td>---</td>
                                             <td>---</td>
                                             <td>
-                                                ---
+                                                Get datasets from ML chapter 01 slides
                                             </td>
-                                            <td>---</td>
-                                            <td>Implement ML concepts on a large dataset (Same as assignment of SVM and DT)
+                                            <td>Portal + Viva MS Teams</td>
+                                            <td>Implement ML concepts on a large dataset (Same as assignment of SVM and DT) and prepare a report for it
                                             </td>
                                         </tr>
                                         <tr>
@@ -1164,6 +1180,28 @@
                                             </td>
                                             <td>MS Teams</td>
                                             <td>Implement your chosen research paper
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>ML General Assignment (Not Graded)</td>
+                                            <td>Tuesday, July 21</td>
+                                            <td>---</td>
+                                            <td>
+                                                See datasets resources in chapter 01 slides of ML course
+                                            </td>
+                                            <td>Portal</td>
+                                            <td>Submit ML project proposal
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>HCI Lab Assignment Group</td>
+                                            <td>Sunday, July 19</td>
+                                            <td>11:59 pm</td>
+                                            <td>
+                                                See Lab 12 Manual
+                                            </td>
+                                            <td>Portal</td>
+                                            <td>Powerpoint Prototypes of your project
                                             </td>
                                         </tr>
                                         <tr>
@@ -1192,7 +1230,8 @@
                                 <p class="lead">
                                     <ul>
                                         <li>All lecture material credit goes to the teachers.</li>
-                                        <li>Bootstrap table template taken from https://bootsnipp.com/snippets/AlZ7g</li>
+                                        <li>
+                                            <a href="Bootstrap table template taken from https://bootsnipp.com/snippets/AlZ7g" target="_blank">Click here for Bootstrap table template</a></li>
                                         <li><a href="https://github.com/iamjumshaid/BSE-6A-Phase-02" target="_blank">Click here for GitHub repository</a> </li>
                                     </ul>
 
@@ -1244,11 +1283,14 @@
 
             //}
             switch (b.getDate()) {
-                case 13:
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT HCI LAB TASK POWERPOINT PROTOTYPE LAB 12 MANUAL ACTIVITY 01 (11:59 PM) PORTAL.</b>";
-                    break;
                 case 15:
                     document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT AI LAB TASK MATLAB LAB 11 MANUAL (11:59 PM) PORTAL.</b>";
+                    break;
+                case 18:
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT HCI LAB ASSIGNMENT GROUP POWERPOINT PROTOTYPES OF YOUR PROJECT (11:59 PM) PORTAL.</b>";
+                    break;
+                case 21:
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT ML PROJECT PROPOSAL ON PORTAL.</b>";
                     break;
                 default:
                     document.getElementById('deadline').innerHTML = "<b class=\"text-success\">NO SUBMISSION FOR " + month[b.getMonth()] + " " + b.getDate() + ", " + b.getFullYear() + " </b>";
