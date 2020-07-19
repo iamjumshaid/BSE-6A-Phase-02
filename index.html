@@ -1391,16 +1391,15 @@
             month[9] = "October";
             month[10] = "November";
             month[11] = "December";
-            //   if (a.getDate() == b.getDate()) {
-            //    
-
-            //}
             switch (b.getDate()) {
+                case 21:
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT HCI GROUP ASSIGNMENT POWERPOINT PROTOTYPES OF PROJECT ON PORTAL BEFORE 11:59 PM.</b>";
+                    break;
                 case 21:
                     document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT ML PROJECT PROPOSAL ON PORTAL.</b>";
                     break;
                 case 28:
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT ML ASSIGNMENT WORKING WITH WEKA ON PORTAL.</b>";
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT ML ASSIGNMENT WORKING WITH WEKA ON PORTAL  BEFORE 11:00 PM..</b>";
                     break;
                 default:
                     document.getElementById('deadline').innerHTML = "<b class=\"text-success\">NO SUBMISSION FOR " + month[b.getMonth()] + " " + b.getDate() + ", " + b.getFullYear() + " </b>";
