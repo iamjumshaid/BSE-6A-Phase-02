@@ -1506,6 +1506,51 @@
                                     <th>Assignment Details</th>
                                 </thead>
                                 <tbody>
+
+                                    <tr>
+                                        <td>ML Project</td>
+                                        <td>Thursday, August 06</td>
+                                        <td>11:00 PM</td>
+                                        <td>
+                                            Get datasets from ML chapter 01 slides
+                                        </td>
+                                        <td>On Portal</td>
+                                        <td>Implement ML concepts on a large dataset (Same as assignment of SVM and DT) and prepare a report for it
+					<br>
+					Following students will present their projects in thursday's class of August 06:
+					<ol>
+					<li>Wardha Ijaz</li>
+					<li>Muhammad Soban</li>
+					<li>Raja Samak</li>
+					<li>Ali Raza</li>
+					<li>Muhammad Zaman</li>
+					<li>Abdul Qadar</li>
+					<li>Sheheryar Ahsan</li>
+					</ol>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>AI Lab Project Presentation</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>
+                                            ---
+                                        </td>
+                                        <td>MS Teams</td>
+                                        <td>Implement your chosen research paper and present
+                                        </td>
+                                    </tr>
+				    <tr>
+                                        <td>HCI Lab Assignment</td>
+                                        <td>Sunday, August 02 </td>
+                                        <td>11:59 pm</td>
+                                        <td>
+                                            See Lab 14 Manual
+                                        </td>
+                                        <td>Portal</td>
+                                        <td>Make Figma prototypes of Lab Project Group Assignment
+                                        </td>
+                                    </tr>
                                     <tr>
                                         <td>AI Lab Assignment</td>
                                         <td>Thursday, July 30</td>
@@ -1517,15 +1562,15 @@
                                         <td>Perform Multi-Linear Regression in MATLAB
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>AI Lab Project Presentation</td>
-                                        <td>Monday, August 03</td>
-                                        <td>---</td>
+				    <tr>
+                                        <td>HCI Lab Task</td>
+                                        <td>Wednesday, July 29 </td>
+                                        <td>11:59 pm</td>
                                         <td>
-                                            ---
+                                            See Lab 14 Manual
                                         </td>
-                                        <td>MS Teams</td>
-                                        <td>Implement your chosen research paper and present
+                                        <td>Portal</td>
+                                        <td>Make Figma prototypes of activity 01 in lab manual
                                         </td>
                                     </tr>
                                     <tr>
@@ -1550,41 +1595,6 @@
                                         <td>Implement ML algorithms on datasets
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td>ML Project</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>
-                                            Get datasets from ML chapter 01 slides
-                                        </td>
-                                        <td>Portal + Viva MS Teams</td>
-                                        <td>Implement ML concepts on a large dataset (Same as assignment of SVM and DT) and prepare a report for it
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>ML General Assignment (Not Graded)</td>
-                                        <td>Tuesday, July 21</td>
-                                        <td>---</td>
-                                        <td>
-                                            See datasets resources in chapter 01 slides of ML course
-                                        </td>
-                                        <td>Portal</td>
-                                        <td>Submit ML project proposal
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>HCI Lab Assignment</td>
-                                        <td>Sunday, July 26</td>
-                                        <td>11:59 pm</td>
-                                        <td>
-                                            See Lab 12 Manual
-                                        </td>
-                                        <td>Portal</td>
-                                        <td>Make Adobe XD prototypes of Lab Project Group Assignment
-                                        </td>
-                                    </tr>
-
-
                                 </tbody>
                             </table>
                         </div>
@@ -1649,17 +1659,20 @@
             month[10] = "November";
             month[11] = "December";
             switch (b.getDate()) {
-                case 26:
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT HCI GROUP ASSIGNMENT ADOBE XD PROTOTYPES OF PROJECT ON PORTAL BEFORE 11:59 PM. SUBMIT AI WEEK 05 & WEEK 06 ASSIGNMENT MATLAB ON PORTAL BEFORE 11:59 PM.</b>";
-                    break;
                 case 28:
                     document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT ML ASSIGNMENT WORKING WITH WEKA ON PORTAL  BEFORE 11:00 PM.</b>";
                     break;
                 case 29:
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT AI LAB ASSIGNMENT GENETIC ALGO ON KNAPSACK PROBLEM ON PORTAL BEFORE 2:00 PM.</b>";
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT AI ASSIGNMENT GENETIC ALGO ON KNAPSACK PROBLEM ON PORTAL BEFORE 7:00 PM. SUBMIT HCI LAB TASK FIGMA PROTOTYPES OF ACTIVITY 01 LAB MANUAL 14 ON MS TEAMS BEFORE 11:59 PM.</b>";
                     break;
                 case 30:
                     document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT AI WEEK 07 MULTI-LINEAR REGRESSION MATLAB ON PORTAL BEFORE 11:59 PM.</b>";
+                    break;
+		case 02:
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT HCI GROUP ASSIGNMENT FIGMA PROTOTYPES ON MS TEAMS BEFORE 11:59 PM.</b>";
+                    break;
+		case 06:
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT ML PROJECT REPORT ON PORTAL  BEFORE 11:00 PM.</b>";
                     break;
                 default:
                     document.getElementById('deadline').innerHTML = "<b class=\"text-success\">NO SUBMISSION FOR " + month[b.getMonth()] + " " + b.getDate() + ", " + b.getFullYear() + " </b>";
