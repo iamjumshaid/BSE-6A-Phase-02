@@ -526,6 +526,19 @@
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td>Lecture 27</td>
+                                        <td>Thursday, July 30</td>
+                                        <td><a href="#" target="_blank">
+                                     Click Here 
+                                    </a>
+                                        </td>
+
+                                        <td><a href="https://www.canva.com/learn/website-color-schemes/" target="_blank">
+                                        Click Here - Reading Material
+                                    </a></td>
+                                        <td>Websites Color Scheme</td>
+                                    </tr>
+                                    <tr>
                                         <td>Lecture 26</td>
                                         <td>Thursday, July 30</td>
                                         <td><a href="https://www.youtube.com/watch?v=-SPc9d4SJ5o" target="_blank">
@@ -1563,6 +1576,17 @@
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td>AI Lab Project Presentation</td>
+                                        <td>Monday, August 10</td>
+                                        <td>---</td>
+                                        <td>
+                                            ---
+                                        </td>
+                                        <td>MS Teams</td>
+                                        <td>Implement your chosen research paper and present
+                                        </td>
+                                    </tr>
+                                    <tr>
                                         <td>ML Course Viva</td>
                                         <td>---</td>
                                         <td>---</td>
@@ -1614,17 +1638,6 @@
                                                 <li>Abdul Qadar</li>
                                                 <li>Sheheryar Ahsan</li>
                                             </ol>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>AI Lab Project Presentation</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>
-                                            ---
-                                        </td>
-                                        <td>MS Teams</td>
-                                        <td>Implement your chosen research paper and present
                                         </td>
                                     </tr>
                                     <tr>
@@ -1708,7 +1721,6 @@
     </section>
     <script>
         function myFunction() {
-            alert('HCI Arranged Class Thursday, June 30 10:00 AM');
             var a = new Date('2020-07-04');
             var b = new Date();
             var month = new Array();
@@ -1725,14 +1737,18 @@
             month[10] = "November";
             month[11] = "December";
             switch (b.getDate()) {
-                case 29:
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT HCI LAB TASK FIGMA PROTOTYPES OF ACTIVITY 01 LAB MANUAL 14 ON MS TEAMS BEFORE 11:59 PM. SUBMIT ML ASSIGNMENT WORKING WITH WEKA ON PORTAL  BEFORE 11:00 PM.</b>";
-                    break;
                 case 30:
                     document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT AI WEEK 07 MULTI-LINEAR REGRESSION MATLAB ON PORTAL BEFORE 11:59 PM.</b>";
+                    alert('1: HCI Arranged Classes Thursday, June 30 10:00 AM to 12:00 PM\n2: SEE Regular Class 2:00 PM\n3: No ML class today!');
+                    break;
+                case 05:
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">AI COURSE VIVA WILL BE TAKEN TODAY AT 2:00 PM (ALL COURSE INCLUDED).</b>";
                     break;
                 case 06:
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT ML PROJECT REPORT ON PORTAL  BEFORE 11:00 PM.</b>";
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT ML PROJECT REPORT ON PORTAL  BEFORE 11:00 PM. (MENTIONED NAMES IN ASSIGNMENT SECTION WILL ALSO PRESENT THEIR PROJECTS)</b>";
+                    break;
+                case 10:
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">AI-LAB PROJECT PRESENTATIONS WILL BE TAKEN TODAY ON MS TEAMS.</b>";
                     break;
                 default:
                     document.getElementById('deadline').innerHTML = "<b class=\"text-success\">NO SUBMISSION FOR " + month[b.getMonth()] + " " + b.getDate() + ", " + b.getFullYear() + " </b>";
