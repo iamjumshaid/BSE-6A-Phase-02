@@ -14,7 +14,7 @@
     <link rel="icon" href="icon.png" type="image/icon type">
 </head>
 
-<body onload="myFunction()">
+<body onload="myFunction()" id="main-body">
 
     <h1 class="text-center text-success">BSE 6A - Phase 02 Updates</h1>
 
@@ -1652,17 +1652,6 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>AI Lab Assignment</td>
-                                        <td>Thursday, July 30</td>
-                                        <td>11:59 pm</td>
-                                        <td>
-                                            See Lab 13 Manual
-                                        </td>
-                                        <td>Portal</td>
-                                        <td>Perform Multi-Linear Regression in MATLAB
-                                        </td>
-                                    </tr>
-                                    <tr>
                                         <td>AI Theory Assignment</td>
                                         <td>---</td>
                                         <td>---</td>
@@ -1737,9 +1726,9 @@
             month[10] = "November";
             month[11] = "December";
             switch (b.getDate()) {
-                case 30:
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT AI WEEK 07 MULTI-LINEAR REGRESSION MATLAB ON PORTAL BEFORE 11:59 PM. SUBMIT ML ASSIGNMENT BEFORE 10:20 PM ON PORTAL.</b>";
-                    alert('1: HCI Arranged Classes Thursday, June 30 10:00 AM to 12:00 PM\n2: SEE Regular Class 2:00 PM\n3: No ML class today!');
+                case 1:
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-primary\" style=\"font-size:2rem\">EID MUBARAK!</b>";
+                    document.body.background = "https://media3.giphy.com/media/3WuUfTjDqp7ZoDc08P/giphy.gif";
                     break;
                 case 05:
                     document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">AI COURSE VIVA WILL BE TAKEN TODAY AT 2:00 PM (ALL COURSE INCLUDED).</b>";
