@@ -91,6 +91,18 @@
                                         <td>All Lectures till S01</td>
                                     </tr>
                                     <tr>
+                                        <td>Lecture 25</td>
+                                        <td>Monday, August 10</td>
+                                        <td><a href="#" target="_blank">
+                                        See recording on MS Teams
+                                        </a>
+                                        </td>
+                                        <td><a href="#" target="_blank">
+                                        ---
+                                        </a></td>
+                                        <td>Particle Swarm Optimization</td>
+                                    </tr>
+                                    <tr>
                                         <td>Lecture 24</td>
                                         <td>Wednesday, July 29</td>
                                         <td><a href="https://drive.google.com/file/d/1tm0moLXm6KwcYvlzYOVAEtPjIsVLkJBB/view?usp=sharing" target="_blank">
@@ -1664,19 +1676,8 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>AI Lab Project Presentation</td>
-                                        <td>Monday, August 10</td>
-                                        <td>2:00 PM - 5:00 PM</td>
-                                        <td>
-                                            ---
-                                        </td>
-                                        <td>MS Teams</td>
-                                        <td>Implement your chosen research paper and present
-                                        </td>
-                                    </tr>
-                                    <tr>
                                         <td>ML Course Viva</td>
-                                        <td>August 10 (Monday) till August 13 (Thursday)</td>
+                                        <td>August 10 (Monday) till August 16 (Sunday)</td>
                                         <td><a target="_blank" href="https://docs.google.com/forms/d/1TqBnzJeqd_DAnbzukQAfR2MKCECx6IGQeO45hrG0LQ8/edit?usp=drivesdk">
                                         Click Here to fill viva form and select your time</a></td>
                                         <td>
@@ -1684,28 +1685,6 @@
                                         </td>
                                         <td>MS Teams</td>
                                         <td>---
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>HCI Theory Group Presentation</td>
-                                        <td>---</td>
-                                        <td>---</td>
-                                        <td>
-                                            ---
-                                        </td>
-                                        <td>MS Teams</td>
-                                        <td>Present the topic assigned to your group
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>HCI Lab Group Presentation</td>
-                                        <td>Saturday, August 08</td>
-                                        <td>10:00 AM</td>
-                                        <td>
-                                            Use one of the standard color scheme of website design lecture 27
-                                        </td>
-                                        <td>MS Teams</td>
-                                        <td>Present your group prototypes of project made on figma
                                         </td>
                                     </tr>
                                 </tbody>
@@ -1781,17 +1760,11 @@
             month[10] = "November";
             month[11] = "December";
             switch (b.getDate()) {
-                case 10:
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">AI-LAB PROJECT PRESENTATIONS WILL BE TAKEN TODAY ON MS TEAMS FROM 2:00 PM till 5:00 PM.</b>";
-                    break;
-                case 8:
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">HCI PROJECT PRESENTATIONS WILL BEGIN TODAY FROM 10:00 AM ONWARDS TODAY.</b>";
-                    break;
                 case 11:
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">ML VIVA BEGINS FROM TODAY TILL AUGUST 13.</b>";
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">AI LAB FINAL WILL BE TAKEN TODAY AT 2:00 PM. REMAINING AI LAB PRESENTATIONS WILL BE TAKEN AT 10:00 AM TODAY.</b>";
                     break;
                 case 13:
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT SEE ASSIGNMENT 01,02,03 ON PORTAL.</b>";
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT SEE ASSIGNMENT 01,02,03 ON PORTAL (SEE SUBMISSION TIME ON PORTAL).</b>";
                     break;
                 default:
                     document.getElementById('deadline').innerHTML = "<b class=\"text-success\">NO SUBMISSION FOR " + month[b.getMonth()] + " " + b.getDate() + ", " + b.getFullYear() + " </b>";
