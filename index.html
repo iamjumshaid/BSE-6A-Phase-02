@@ -1716,13 +1716,65 @@
 
                         <!---Time table ---->
                         <div class="tab-pane fade" id="nav-time" role="tabpanel" aria-labelledby="nav-time-tab">
-                            <br>
+                            <table class="table" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>Course</th>
+                                        <th>Exam Date</th>
+                                        <th>Exam Day</th>
+                                        <th>Time</th>
+                                        <th>Final Course</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>AI Lab</td>
+                                        <td>August 11, 2020</td>
+                                        <td>Tuesday</td>
+                                        <td>2:00 PM - 7:00 PM</td>
+                                        <td>Everything except NetLogo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>HCI Lab</td>
+                                        <td>August 15, 2020</td>
+                                        <td>Saturday</td>
+                                        <td>2:00 PM - 7:00 PM</td>
+                                        <td>---</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SEE</td>
+                                        <td>August 18, 2020</td>
+                                        <td>Tuesday</td>
+                                        <td>9:00 AM - 2:00 PM</td>
+                                        <td>All lectures after Sessional 01</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ML</td>
+                                        <td>August 19, 2020</td>
+                                        <td>Wednesday</td>
+                                        <td>9:00 AM - 2:00 PM</td>
+                                        <td>---</td>
+                                    </tr>
+                                    <tr>
+                                        <td>AI</td>
+                                        <td>August 20, 2020</td>
+                                        <td>Thursday</td>
+                                        <td>9:00 AM - 5:00 PM</td>
+                                        <td>Everything included</td>
+                                    </tr>
+                                    <tr>
+                                        <td>HCI</td>
+                                        <td>August 24, 2020</td>
+                                        <td>Monday</td>
+                                        <td>9:00 AM - 2:00 PM</td>
+                                        <td>---</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <br><br>
                             <center>
-                                <img class="img-fluid" src="lab-ds.png" alt="">
-                                <br>
-                                <br>
-                                <hr>
-                                <br>
+
                                 <h6> Timetable edited by Hamza Saeed </h6>
 
                                 <img class="img-fluid" src="tt.jpeg" alt="">
@@ -1742,7 +1794,6 @@
     <script>
         function myFunction() {
             var a = new Date('2020-07-04');
-            alert("You can give ML viva before Sunday, August 16. [Contact Dr. Khalil on WhatsApp or MS-Teams for Viva]")
             var b = new Date();
             var month = new Array();
             month[0] = "January";
@@ -1758,8 +1809,8 @@
             month[10] = "November";
             month[11] = "December";
             switch (b.getDate()) {
-                case 11:
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">AI LAB FINAL WILL BE TAKEN TODAY AT 2:00 PM. REMAINING AI LAB PRESENTATIONS WILL BE TAKEN AT 10:00 AM TODAY.</b>";
+                case 12:
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">GIVE YOUR ML VIVA IF IT IS SCHEDULED TODAY OR YOU DIDN'T GIVE IT ON MONDAY OR TUESDAY. REMAINING AI LAB PRESENTATIONS WILL BE TAKEN TODAY.</b>";
                     break;
                 case 13:
                     document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SUBMIT SEE ASSIGNMENT 01,02,03 ON PORTAL (SEE SUBMISSION TIME ON PORTAL).</b>";
