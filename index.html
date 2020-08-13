@@ -52,7 +52,7 @@
                             <a class="nav-item nav-link text-white" id="nav-contact-tab" data-toggle="tab" href="#nav-see" role="tab" aria-controls="nav-see" aria-selected="false">SEE</a>
                             <a class="nav-item nav-link text-white" id="nav-contact-tab" data-toggle="tab" href="#nav-ml" role="tab" aria-controls="nav-ml" aria-selected="false">ML</a>
                             <a class="nav-item nav-link text-white" id="nav-contact-tab" data-toggle="tab" href="#nav-assign" role="tab" aria-controls="nav-assign" aria-selected="false">Assignments/Quizzes</a>
-                            <a class="nav-item nav-link text-white" id="nav-contact-tab" data-toggle="tab" href="#nav-time" role="tab" aria-controls="nav-time" aria-selected="false">Time Table/Date Sheet</a>
+                            <a class="nav-item nav-link text-white" id="nav-contact-tab" data-toggle="tab" href="#nav-time" role="tab" aria-controls="nav-time" aria-selected="false">Date Sheet/Time Table</a>
                             <a class="nav-item nav-link text-white" id="nav-contact-tab" data-toggle="tab" href="#nav-credits" role="tab" aria-controls="nav-credits" aria-selected="false">Credits</a>
 
                         </div>
@@ -830,6 +830,20 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <tr>
+                                        <td>Lab 03 & Lab 04</td>
+                                        <td>Feb - March</td>
+                                        <td><a href="#" target="_blank">
+                                        ---
+                                        </a>
+                                        </td>
+
+                                        <td><a href="https://drive.google.com/drive/folders/1xA2E8Gf-HWH4kRR38Kf56vvM9Ep7GtxP?usp=sharing" target="_blank">
+                                            Click Here
+                                        </a>
+                                        </td>
+                                        <td>Usablity Inspection | Web Accessability</td>
+                                    </tr>
                                     <tr>
                                         <td>Lab 14 Combined</td>
                                         <td>Monday, July 27</td>
@@ -1654,41 +1668,9 @@
 
                         <!---Assignments ---->
                         <div class="tab-pane fade" id="nav-assign" role="tabpanel" aria-labelledby="nav-assgin-tab">
-                            <table class="table" cellspacing="0">
-                                <thead>
-                                    <th>Subject</th>
-                                    <th>Due Date</th>
-                                    <th>Time</th>
-                                    <th>Helping Material</th>
-                                    <th>Submission</th>
-                                    <th>Assignment Details</th>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>SEE Assignment 01,02,03</td>
-                                        <td>Thursday, August 13</td>
-                                        <td>7:00 PM</td>
-                                        <td>
-                                            Download assignments from portal
-                                        </td>
-                                        <td>Send to Nabeel</td>
-                                        <td>Complete all 3 assignments.
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>ML Course Viva</td>
-                                        <td>August 10 (Monday) till August 16 (Sunday)</td>
-                                        <td><a target="_blank" href="https://docs.google.com/forms/d/1TqBnzJeqd_DAnbzukQAfR2MKCECx6IGQeO45hrG0LQ8/edit?usp=drivesdk">
-                                        Click Here to fill viva form and select your time</a></td>
-                                        <td>
-                                            ---
-                                        </td>
-                                        <td>MS Teams</td>
-                                        <td>---
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <br>
+                            <br>
+                            <h6 class="text-info text-center">Congratulation! No more assignments or quizzes left.</h6>
                         </div>
 
                         <!---Assignment ends here---->
@@ -1728,18 +1710,18 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>AI Lab</td>
-                                        <td>August 11, 2020</td>
-                                        <td>Tuesday</td>
-                                        <td>2:00 PM - 7:00 PM</td>
-                                        <td>Everything except NetLogo</td>
+                                        <td><del>AI Lab</del></td>
+                                        <td><del>August 11, 2020</del></td>
+                                        <td><del>Tuesday</del></td>
+                                        <td><del>2:00 PM - 7:00 PM</del></td>
+                                        <td><del>Everything except NetLogo</del></td>
                                     </tr>
                                     <tr>
                                         <td>HCI Lab</td>
                                         <td>August 15, 2020</td>
                                         <td>Saturday</td>
-                                        <td>In Morning (TIME TO BE DECIDED)</td>
-                                        <td>---</td>
+                                        <td>9:00 AM - 2:00 PM</td>
+                                        <td>All course except first 2 labs</td>
                                     </tr>
                                     <tr>
                                         <td>SEE</td>
@@ -1753,7 +1735,7 @@
                                         <td>August 19, 2020</td>
                                         <td>Wednesday</td>
                                         <td>9:00 AM - 2:00 PM</td>
-                                        <td>---</td>
+                                        <td>All online lectures</td>
                                     </tr>
                                     <tr>
                                         <td>AI</td>
@@ -1810,11 +1792,10 @@
             month[11] = "December";
             switch (b.getDate()) {
                 case 12:
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">GIVE YOUR ML VIVA IF IT IS SCHEDULED TODAY OR YOU DIDN'T GIVE IT ON MONDAY OR TUESDAY. SEND YOUR QUIZ 01 SEE IF YOU MISSED TODAY TO NABEEL BEFORE 5:00 PM.</b>";
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">GIVE YOUR ML VIVA TODAY. GIVE YOUR REMAINING AI LAB PRESENTATIONS TODAY.</b>";
                     break;
                 case 13:
-                    alert("SEE QUIZ 02 WILL BE TAKEN TODAY AT 1:00 PM. OPEN THIS LINK AT 1:00 PM https://forms.office.com/Pages/ResponsePage.aspx?id=bAnfdXKL5Eibkcv3nYfuOqIxt7lvJxNFjUnmfuyU8JNUMU1GVEFPOTVDR0U2STZDVUZIOVA1OEFOVi4u")
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SEND YOUR ALL 3 SEE ASSIGNMENTS TO NABIL BEFORE 7:00 PM.</b>";
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">HCI Lab Final will be taken today at 9:00 AM.</b>";
                     break;
                 default:
                     document.getElementById('deadline').innerHTML = "<b class=\"text-success\">NO SUBMISSION FOR " + month[b.getMonth()] + " " + b.getDate() + ", " + b.getFullYear() + " </b>";
