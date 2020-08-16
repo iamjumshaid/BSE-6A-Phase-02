@@ -1698,6 +1698,9 @@
 
                         <!---Time table ---->
                         <div class="tab-pane fade" id="nav-time" role="tabpanel" aria-labelledby="nav-time-tab">
+                            <br>
+                            <strong class="text-info" id="sem-end"></strong>
+                            <br>
                             <table class="table" cellspacing="0">
                                 <thead>
                                     <tr>
@@ -1717,11 +1720,11 @@
                                         <td><del>Everything except NetLogo</del></td>
                                     </tr>
                                     <tr>
-                                        <td>HCI Lab</td>
-                                        <td>August 15, 2020</td>
-                                        <td>Saturday</td>
-                                        <td>9:00 AM - 2:00 PM</td>
-                                        <td>All course except first 2 labs</td>
+                                        <td><del>HCI Lab</del></td>
+                                        <td><del>August 15, 2020</del></td>
+                                        <td><del>Saturday</del></td>
+                                        <td><del>9:00 AM - 2:00 PM</del></td>
+                                        <td><del>All course except first 2 labs</del></td>
                                     </tr>
                                     <tr>
                                         <td>SEE</td>
@@ -1778,6 +1781,7 @@
             var a = new Date('2020-07-04');
             var b = new Date();
             var month = new Array();
+            var days = 24 - b.getDate();
             month[0] = "January";
             month[1] = "February";
             month[2] = "March";
@@ -1790,12 +1794,21 @@
             month[9] = "October";
             month[10] = "November";
             month[11] = "December";
+
+            document.getElementById('sem-end').innerHTML = "Semester ending after " + days + " days.";
+
             switch (b.getDate()) {
-                case 15:
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">ROLL NUMBERS FROM 026 TILL 045 GIVE YOUR ML VIVA TODAY.</b>";
+                case 18:
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">SEE PAPER WILL BE TAKEN TODAY AT 9:00 AM.</b>";
                     break;
-                case 16:
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">LAST DAY TO GIVE ML VIVA TODAY.</b>";
+                case 19:
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">ML PAPER WILL BE TAKEN TODAY AT 9:00 AM.</b>";
+                    break;
+                case 20:
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">AI PAPER WILL BE TAKEN TODAY AT 2:00 PM.</b>";
+                    break;
+                case 24:
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">HCI PAPER WILL BE TAKEN TODAY AT 9:00 AM.</b>";
                     break;
                 default:
                     document.getElementById('deadline').innerHTML = "<b class=\"text-success\">NO SUBMISSION FOR " + month[b.getMonth()] + " " + b.getDate() + ", " + b.getFullYear() + " </b>";
