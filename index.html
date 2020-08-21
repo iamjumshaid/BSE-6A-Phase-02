@@ -553,6 +553,19 @@
                                 </thead>
                                 <tbody>
                                     <tr>
+                                        <td>Lecture 1 - 10</td>
+                                        <td>Feburuary - March</td>
+                                        <td><a href="#" target="_blank">
+                                        ---
+                                        </a>
+                                        </td>
+
+                                        <td><a href="https://drive.google.com/drive/folders/1Dfx1HuIh_9KBEbeRSM1Jhecao1bmrAqk?usp=sharing" target="_blank">
+                                            Click Here
+                                        </a></td>
+                                        <td>---</td>
+                                    </tr>
+                                    <tr>
                                         <td>Lecture 28</td>
                                         <td>Thursday, August 06</td>
                                         <td><a href="https://www.youtube.com/watch?v=fqc08qbjr0Y" target="_blank">
@@ -1731,7 +1744,7 @@
                                         <td><del>August 18, 2020</del></td>
                                         <td><del>Tuesday</del></td>
                                         <td><del>9:00 AM - 2:00 PM</del></td>
-                                        <td><del></del>All lectures after Sessional 01</del>
+                                        <td><del>All lectures after Sessional 01</del>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1742,18 +1755,18 @@
                                         <td><del>All online lectures</del></td>
                                     </tr>
                                     <tr>
-                                        <td>AI</td>
-                                        <td>August 20, 2020</td>
-                                        <td>Thursday</td>
-                                        <td>2:00 PM - 7:00 PM</td>
-                                        <td>Everything included</td>
+                                        <td><del>AI</del></td>
+                                        <td><del>August 20, 2020</del></td>
+                                        <td><del>Thursday</del></td>
+                                        <td><del>2:00 PM - 7:00 PM</del></td>
+                                        <td><del>Everything included</del></td>
                                     </tr>
                                     <tr>
                                         <td>HCI</td>
                                         <td>August 24, 2020</td>
                                         <td>Monday</td>
                                         <td>9:00 AM - 2:00 PM</td>
-                                        <td>---</td>
+                                        <td>Everything Included</td>
                                     </tr>
 
                                 </tbody>
@@ -1799,12 +1812,17 @@
             document.getElementById('sem-end').innerHTML = "Semester ending after " + days + " days.";
 
             switch (b.getDate()) {
-
-                case 20:
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">AI PAPER WILL BE TAKEN TODAY AT 2:00 PM.</b>";
+                case 21:
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">HCI FINAL EXAM ON AUGUST 24, 9:00 AM.</b>";
+                    break;
+                case 22:
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">HCI FINAL EXAM ON AUGUST 24, 9:00 AM.</b>";
+                    break;
+                case 23:
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">HCI FINAL EXAM ON AUGUST 24, 9:00 AM.</b>";
                     break;
                 case 24:
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">HCI PAPER WILL BE TAKEN TODAY AT 9:00 AM.</b>";
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">HCI FINAL EXAM WILL BE TAKEN TODAY AT 9:00 AM.</b>";
                     break;
                 default:
                     document.getElementById('deadline').innerHTML = "<b class=\"text-success\">NO SUBMISSION FOR " + month[b.getMonth()] + " " + b.getDate() + ", " + b.getFullYear() + " </b>";
