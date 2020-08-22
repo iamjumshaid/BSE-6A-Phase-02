@@ -1809,23 +1809,18 @@
             month[10] = "November";
             month[11] = "December";
 
-            document.getElementById('sem-end').innerHTML = "Semester ending after " + days + " days.";
-
             switch (b.getDate()) {
-                case 21:
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">HCI FINAL EXAM ON AUGUST 24, 9:00 AM.</b>";
-                    break;
-                case 22:
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">HCI FINAL EXAM ON AUGUST 24, 9:00 AM.</b>";
-                    break;
                 case 23:
+                    document.getElementById('sem-end').innerHTML = "Semester ending after " + days + " day.";
                     document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">HCI FINAL EXAM ON AUGUST 24, 9:00 AM.</b>";
                     break;
                 case 24:
+                    document.getElementById('sem-end').innerHTML = "Semester ends today.";
                     document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">HCI FINAL EXAM WILL BE TAKEN TODAY AT 9:00 AM.</b>";
                     break;
                 default:
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-success\">NO SUBMISSION FOR " + month[b.getMonth()] + " " + b.getDate() + ", " + b.getFullYear() + " </b>";
+                    document.getElementById('sem-end').innerHTML = "Semester over.";
+                    document.getElementById('deadline').innerHTML = "<b class=\"text-success\">CONGRATULATIONS! FOR MAKING IT THROUGH THIS SEMESTER. THIS WEBSITE WILL BE UPDATED FOR THE 7TH SEMESTER.";
             }
         }
     </script>
