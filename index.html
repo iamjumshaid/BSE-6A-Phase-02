@@ -1762,11 +1762,11 @@
                                         <td><del>Everything included</del></td>
                                     </tr>
                                     <tr>
-                                        <td>HCI</td>
-                                        <td>August 24, 2020</td>
-                                        <td>Monday</td>
-                                        <td>9:00 AM - 2:00 PM</td>
-                                        <td>Everything Included</td>
+                                        <td><del>HCI</del></td>
+                                        <td><del>August 24, 2020</del></td>
+                                        <td><del>Monday</del></td>
+                                        <td><del>9:00 AM - 2:00 PM</del></td>
+                                        <td><del>Everything Included</del></td>
                                     </tr>
 
                                 </tbody>
@@ -1810,17 +1810,8 @@
             month[11] = "December";
 
             switch (b.getDate()) {
-                case 23:
-                    document.getElementById('sem-end').innerHTML = "Semester ending after " + days + " day.";
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">HCI FINAL EXAM ON AUGUST 24, 9:00 AM.</b>";
-                    break;
-                case 24:
-                    document.getElementById('sem-end').innerHTML = "Semester ends today.";
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-danger\">HCI FINAL EXAM WILL BE TAKEN TODAY AT 9:00 AM.</b>";
-                    break;
-                default:
-                    document.getElementById('sem-end').innerHTML = "Semester over.";
-                    document.getElementById('deadline').innerHTML = "<b class=\"text-success\">CONGRATULATIONS! FOR MAKING IT THROUGH THIS SEMESTER. THIS WEBSITE WILL BE UPDATED FOR THE 7TH SEMESTER.";
+                default: document.getElementById('sem-end').innerHTML = "Semester over.";
+                document.getElementById('deadline').innerHTML = "<b class=\"text-success\">CONGRATULATIONS! FOR MAKING IT THROUGH THIS SEMESTER. THIS WEBSITE WILL BE UPDATED FOR THE 7TH SEMESTER.";
             }
         }
     </script>
